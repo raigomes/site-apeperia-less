@@ -1,7 +1,6 @@
 @cor-padrao: #c34d4a;
-@raio-da-borda: 0.3em;
 
-.borda-arrendodada {
+.borda-arrendodada (@raio-da-borda: 0.3em) {
   -webkit-border-radius: @raio-da-borda;
   -o-border-radius: @raio-da-borda;
   border-radius: @raio-da-borda;
@@ -108,7 +107,7 @@ header .container {
   border: 0;  
   padding: .6em;
   font-size: 1.2em;
-  .borda-arrendodada;
+  .borda-arrendodada(2em);
   .sombra-padrao;
   font-weight: bold;
 }
