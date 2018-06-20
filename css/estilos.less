@@ -1,4 +1,15 @@
 @cor-padrao: #c34d4a;
+@raio-da-borda: 0.3em;
+
+.borda-arrendodada {
+  -webkit-border-radius: @raio-da-borda;
+  -o-border-radius: @raio-da-borda;
+  border-radius: @raio-da-borda;
+}
+
+.sombra-padrao {
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}
 
 /** Geral **/
 body {
@@ -94,12 +105,11 @@ header .container {
 .destaque button {
   margin-top: 1em;
   background: @cor-padrao;
-  border: 0;
+  border: 0;  
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-arrendodada;
+  .sombra-padrao;
   font-weight: bold;
 }
 
@@ -227,12 +237,11 @@ header .container {
   background: @cor-padrao;
   border: 0;
   color: #fff;
-  width: 210px;
+  width: 210px;  
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-arrendodada;
+  .sombra-padrao;
   margin-left: 2em;
 }
 
@@ -312,11 +321,10 @@ form {
 
 .contato input,
 textarea {
-  width: 100%;
+  width: 100%;  
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  .borda-arrendodada;
   border: 2px solid #ccc;
 }
 
@@ -325,12 +333,11 @@ textarea {
   background: @cor-padrao;
   border: 0;
   color: #fff;
-  width: 210px;
+  width: 210px;  
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
-  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  .borda-arrendodada;
+  .sombra-padrao;
 }
 
 /** Footer **/
