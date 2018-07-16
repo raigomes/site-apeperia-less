@@ -1,0 +1,79 @@
+/** Blog **/
+.blog {
+    display: block;
+    position: relative;
+  }
+  
+  .blog::after {
+    content: "";
+    background: url(../imagens/fundo.png);
+    background-size: 25px 25px;
+    opacity: .15;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .post-destaque,
+  .posts-antigos {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .post-destaque {
+    margin-right: 2em;
+  }
+  
+  .post-destaque img {
+    width: 100%;
+  }
+  
+  .posts-antigos a {
+    text-decoration: none;
+    color: black;
+    background: url(../imagens/icone-relogio.png) left center no-repeat;
+    padding-left: 2.5em;
+    height: 1.7em;
+    display: block;
+  }
+  
+  .posts-antigos a:hover {
+    text-decoration: underline;
+  }
+  
+  /** Contato **/
+  .contato input,
+  .contato button {
+    display: block;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 50%;
+  }
+  
+  .contato input,
+  textarea {
+    width: 100%;  
+    margin-bottom: .8em;
+    padding: 4px 8px;
+    .borda-arrendodada;
+    border: 2px solid #ccc;
+  }
+  
+  .contato button {
+    margin: 0 auto;
+    background: @cor-padrao;
+    border: 0;
+    color: #fff;
+    width: 210px;  
+    height: 38px;
+    font-size: 1.2em;
+    .borda-arrendodada;
+    .sombra-padrao;
+  }
+  
